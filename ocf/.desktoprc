@@ -1,0 +1,8 @@
+[ -d ~/.mozilla/firefox ] || mkdir -p ~/.mozilla/firefox
+[ ~/.mozilla/firefox/profiles.ini ] || echo -n > ~/.mozilla/firefox/profiles.ini
+cp -f ~/remote/.settings/profiles.ini ~/.mozilla/firefox/profiles.ini
+cp -f ~/remote/.settings/firefoxx.desktop ~/Desktop/firefoxx.desktop
+cp -f ~/remote/.settings/chrome.desktop ~/Desktop/chrome.desktop
+cp -rf ~/remote/.settings/google-chrome ~/.config/
+cp -f ~/remote/.bash_aliases ~/.bashrc.local
+pkill "xautolock" &
